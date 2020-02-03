@@ -4,8 +4,9 @@ class Message:
     WARN=4
     ERROR=3
     CRITICAL=2
+    CHECKERROR=1
 
-    LEVELS=["","","CRITICAL","ERROR","WARN","NOTICE","INFO"]
+    LEVELS=["","CHECKERROR","CRITICAL","ERROR","WARN","NOTICE","INFO"]
     def __init__(self, module, level, text):
         self.module=module
         self.level=level
